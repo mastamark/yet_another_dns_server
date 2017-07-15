@@ -1,0 +1,11 @@
+yet_another_dns_server
+-----------------------
+
+Stupid simple install of bind9 on top of ubuntu 14.04 for those of us who continue to manage our own dns.
+
+Easily used for master or slave by exporting local volume with config(s) and zone files at runtime.
+
+Example for master:
+- /some/place/named.conf.local:/etc/bind/named.conf.local
+- /some/place/named.conf.options:/etc/bind/named.conf.options
+- /some/place/master_zone_files:/var/cache/bind
